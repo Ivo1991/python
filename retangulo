@@ -1,0 +1,20 @@
+import math
+
+base: float
+altura: float
+area: float
+perimetro: float
+diagonal: float
+raiz: float
+
+base = float(input("Base do retangulo: "))
+altura = float(input("Altura do retangulo: "))
+
+area = base * altura
+perimetro = (base + altura) * 2
+diagonal = base * altura + base * altura
+raiz = math.sqrt(diagonal)
+
+print(f"AREA = {area:.2f}")
+print(f"PERIMETRO = {perimetro:.2f}")
+print(f"DIAGONAL = {raiz:.2f}")
